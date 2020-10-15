@@ -15,6 +15,7 @@ class ConfirmationsController < Devise::ConfirmationsController
         @confirmable.errors.add(:email, :password_already_set)
       end
     end
+  end
 
     if !@confirmable.errors.empty?
       self.resource = @confirmable

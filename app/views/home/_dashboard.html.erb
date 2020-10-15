@@ -45,15 +45,7 @@
       </div>
     </div>
     <hr />
-		<% @teams.each do |team| %>
-    <div class="content border-bottom pb4">
-      <p class="title is-4">
-        <%= link_to team_name, team %>
-      </p>
-      <p class='subtitle is-6'><%= team.user.count%>Members</p>
-      <span class="f6"><%= safe_join(team.users.map { |user| user.name }, ', ') %></span>
-    </div>
-		<%end%>
+
 
   </div>
 
